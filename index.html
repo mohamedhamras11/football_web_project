@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head> 
+       <meta charset="UTF-8">    
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css" />
+      <title>Football Stadium</title>
+        </head>
+<body> 
+    <section class="showcase">
+        <header>
+          <h2 class="logo">Football</h2>
+          <div class="toggle"></div>
+        </header>
+        <video src="stadium.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+          <h2>90 minutes of awesomeness</h2> 
+          <h3> Teamwork makes the dream work</h3>
+          <p>There will be obstacles. There will be doubters. There will be mistakes. But with hard work, there are no limits..</p>
+          <a href="#">Explore</a>
+          <script>
+            const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+    
+        menuToggle.addEventListener('click', () => {
+          menuToggle.classList.toggle('active');
+          showcase.classList.toggle('active');
+        })
+        </script>
+        </div>
+        <ul class="social">
+          <li><a href="https://www.facebook.com/"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+          <li><a href="https://twitter.com/i/flow/login"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+          <li><a href="https://www.instagram.com/accounts/login/"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+        </ul>
+      </section>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Destination</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
